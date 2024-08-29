@@ -171,6 +171,59 @@ also, write it using ternary operator.
 
 // console.log(result);
 
+// -------------------------task - 6-----------------------------------------------------
+/***
+Ticket fare Calculator
+    - Children (age < 10): free
+    - Students get a 50% discount
+    - Senior citizens (age >= 60) gets a 15% Discount
+    - Otherwise Regular ticket fare 800 tk
+*/
+
+let isStudent = false;
+let age = 62;
+let fare = 800;
+let ticket;
+
+
+if(age<10 ){
+ ticket = 0;
+}
+else if(isStudent){
+ ticket = fare-(fare*50/100);
+}
+else if (age>=60){
+    ticket = fare-(fare *15/100);
+}
+else{
+    ticket = fare;
+}
+
+console.log(`The ticket price is : ${ticket}`);
+
+// let data = [62, false]
+
+// let display =(function ticketPrice (age, isStudent){
+//       const fare = 800;
+//     if(age<10){
+//         return 0;
+//     }
+//     else if(isStudent){
+//         ticket = fare - (fare*50/100);
+//         return ticket
+//     }
+//     else if (age>=60){
+//         ticket = fare - (fare*15/100);
+//         return ticket
+//     }
+//     else{
+//         return fare;
+//     }
+// })(data[0],data[1]);
+
+// console.log(`Your Ticket Price Is: ${display}`);
+
+
 
 
 
