@@ -106,6 +106,41 @@ Create a simple JavaScript program that takes a student's score as input and ret
 //     console.log("Invalid Marks");
 // };
 
+// -------------------------task - 4-----------------------------------------------------
+/***
+
+if you get more then 80 then inside your friend score. 
+    If your friend get more than 80. then go for a lunch. 
+    if your friend get below 80 but greater than or equal 60 then tell your friend, good luck next time. 
+    if your friend get less than 60 but more than or equal to 40 then, keep your friend's message unseen.
+    if your friend get less than 40, block your friend
+if you get less than 80 go to home and sleep and act sad
+
+Note: 
+use nested if-else-if-else
+*/
+
+// let myMarks = 84;
+// let frndMarks = 39
+
+// if (myMarks>=80){
+//    if(frndMarks>=80){
+//     console.log("lets go for a lunch.");
+//    } 
+//    else if (frndMarks<80 && frndMarks>=60){
+//     console.log("good luck next time for lunch");
+//    }
+//    else if (frndMarks<60 && frndMarks>=40){
+//     console.log("friend's message unseen.");
+//    }
+//    else if (frndMarks<40){
+//     console.log("block your friend");
+//    }
+// }
+// else{
+//     console.log("go to home and sleep and act sad");
+// }
+
 
 
 
