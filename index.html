@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise Javascript</title>
+    <link rel="shortcut icon" href="./assets/js-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <!-- font-awsome-CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- tailwindcss cdn -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" /> -->
+     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "btn-bg" : "rgb(182, 140, 90)",
+              "card-bg" : "rgb(243, 243, 243)",
+              "para-color" : "rgb(112, 112, 112)",
+              "text-color" : "rgb(65, 64, 64)",
+              "linear-bg-1" : "rgb(243, 243, 243)",
+              "linear-bg-2" : "rgba(243, 243, 243, 0)"
+
+            }
+          }
+        }
+      }
+    </script>
+
+  <style>
+      .poppins{
+          font-family: "Poppins", sans-serif;
+      }
+      .font-2{
+          font-family: "EB Garamond", serif;
+      }
+      .banner-bg{
+        background-image: url("./images/banner.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+      }
+      .banner-bg-grad{
+        background-image:linear-gradient(to bottom, rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0.8)), url('./images/banner.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+  </style>
+</head>
+<body class="container mx-auto">
+<div class="flex flex-col justify-center items-center">
+  <h1 class="text-5xl font-bold text-center mt-12 mb-48">Practise</h1>
+
+<button class="w-56 h-20 p-4 bg-blue-500 text-2xl text-white mb-12" id="btn1">Reload</button>
+<p class="" id="p1"></p>
+
+</div>
+
+  
+
+<script src="./script.js"></script>
+</body>
+</html>
