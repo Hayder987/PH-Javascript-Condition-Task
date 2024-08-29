@@ -37,28 +37,74 @@ Create a JavaScript program that calculates the Body Mass Index (BMI) and assign
 
 */
 
-let weight = 50;
-let height = 1.8 ; // as Meter 
+// let weight = 50;
 
-let bmi = parseFloat((weight /  Math.pow(height, 2)).toFixed(1));
+// let height = 1.8 ; // as Meter 
 
-if(bmi < 18.5){
-    p1.innerHTML = `Your BMI Is : ${bmi}`;
-    console.log("you are underweight.");
+// let bmi = parseFloat((weight /  Math.pow(height, 2)).toFixed(1));
 
-}
-else if (bmi>=18.5 && bmi<=24.9){
-    p1.innerHTML = `Your BMI Is : ${bmi}`;
-    console.log("you are normal.");
-}
-else if (bmi>=25 && bmi<=29.9){
-    p1.innerHTML = `Your BMI Is : ${bmi}`;
-    console.log("you are overweight.");
-}
-else {
-    p1.innerHTML = `Your BMI Is : ${bmi}`;
-    console.log("you are obese");
-}
+// if(bmi < 18.5){
+//     p1.innerHTML = `Your BMI Is : ${bmi}`;
+//     console.log("you are underweight.");
+
+// }
+// else if (bmi>=18.5 && bmi<=24.9){
+//     p1.innerHTML = `Your BMI Is : ${bmi}`;
+//     console.log("you are normal.");
+// }
+// else if (bmi>=25 && bmi<=29.9){
+//     p1.innerHTML = `Your BMI Is : ${bmi}`;
+//     console.log("you are overweight.");
+// }
+// else {
+//     p1.innerHTML = `Your BMI Is : ${bmi}`;
+//     console.log("you are obese");
+// }
+
+// -------------------------task - 3-----------------------------------------------------
+/***
+Grade Calculator
+
+Create a simple JavaScript program that takes a student's score as input and returns their corresponding grade based on the following grading scale:
+
+    A: 90-100
+    B: 80-89
+    C: 70-79
+    D: 60-69
+    F: 0-59
+
+***/
+
+// let marks = 82;
+
+// let grade = marks<=100 && marks>=90 ? "A" :
+//             marks<=89 && marks>=80 ? "B":
+//             marks<=79 && marks>=70 ? "C" : 
+//             marks<=69 && marks>=60 ? "D" :
+//             marks<=59 && marks>=0 ? "Fail" : "invalid Marks";
+
+// console.log(grade);
+
+// let marks = 100;
+
+// if (marks>=90 && marks<=100){
+//     console.log("A");
+// }
+// else if(marks>=80 && marks<=89){
+//     console.log("B");
+// }
+// else if(marks>=70 && marks<=79){
+//     console.log("C");
+// }
+// else if(marks>=60 && marks<=69){
+//     console.log("D");
+// }
+// else if(marks>=0 && marks<=59){
+//     console.log("F");
+// }
+// else {
+//     console.log("Invalid Marks");
+// };
 
 
 
