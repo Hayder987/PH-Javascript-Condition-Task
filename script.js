@@ -180,26 +180,26 @@ Ticket fare Calculator
     - Otherwise Regular ticket fare 800 tk
 */
 
-let isStudent = false;
-let age = 62;
-let fare = 800;
-let ticket;
+// let isStudent = false;
+// let age = 62;
+// let fare = 800;
+// let ticket;
 
 
-if(age<10 ){
- ticket = 0;
-}
-else if(isStudent){
- ticket = fare-(fare*50/100);
-}
-else if (age>=60){
-    ticket = fare-(fare *15/100);
-}
-else{
-    ticket = fare;
-}
+// if(age<10 ){
+//  ticket = 0;
+// }
+// else if(isStudent){
+//  ticket = fare-(fare*50/100);
+// }
+// else if (age>=60){
+//     ticket = fare-(fare *15/100);
+// }
+// else{
+//     ticket = fare;
+// }
 
-console.log(`The ticket price is : ${ticket}`);
+// console.log(`The ticket price is : ${ticket}`);
 
 // let data = [62, false]
 
@@ -223,6 +223,45 @@ console.log(`The ticket price is : ${ticket}`);
 
 // console.log(`Your Ticket Price Is: ${display}`);
 
+
+
+let input1 = document.querySelector("#input1");
+let input2 = document.querySelector("#input2");
+let select = document.querySelector("#select");
+let btn2 = document.querySelector("#btn2");
+
+
+btn2.addEventListener("click", function(){
+   let age = parseFloat(input2.value);
+    let   fare = parseFloat(input1.value);
+    let isStudent = select.value;
+    isStudent = isStudent=="yes"? true : false;
+
+    let price = 0;
+    if(age<10){
+      price ;
+        
+    }
+    else if (isStudent ){
+        price = fare- (fare*50/100);
+        input2.classList.add("hidden");
+         
+        
+    }
+    else if (age>=60){
+        price = fare- (fare*15/100);
+          
+    }
+    else{
+        price = fare;
+        
+    }
+
+    p1.innerHTML = `Your Ticket Price is : ${price}`;
+});
+
+
+ 
 
 
 
