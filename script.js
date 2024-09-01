@@ -225,40 +225,206 @@ Ticket fare Calculator
 
 
 
-let input1 = document.querySelector("#input1");
-let input2 = document.querySelector("#input2");
-let select = document.querySelector("#select");
-let btn2 = document.querySelector("#btn2");
+
+// let input1 = document.querySelector("#input1");
+// let input2 = document.querySelector("#input2");
+// let select = document.querySelector("#select");
+// let btn2 = document.querySelector("#btn2");
 
 
-btn2.addEventListener("click", function(){
-   let age = parseFloat(input2.value);
-    let   fare = parseFloat(input1.value);
-    let isStudent = select.value;
-    isStudent = isStudent=="yes"? true : false;
+// btn2.addEventListener("click", function(){
+//    let age = parseFloat(input2.value);
+//     let   fare = parseFloat(input1.value);
+//     let isStudent = select.value;
+//     isStudent = isStudent=="yes"? true : false;
 
-    let price = 0;
-    if(age<10){
-      price ;
+//     let price = 0;
+//     if(age<10){
+//       price ;
         
-    }
-    else if (isStudent ){
-        price = fare- (fare*50/100);
-        input2.classList.add("hidden");
-         
-        
-    }
-    else if (age>=60){
-        price = fare- (fare*15/100);
+//     }
+//     else if (isStudent ){
+//         price = fare- (fare*50/100);
+//         input2.classList.add("hidden");       
+//     }
+//     else if (age>=60){
+//         price = fare- (fare*15/100);
           
-    }
-    else{
-        price = fare;
+//     }
+//     else{
+//         price = fare;
         
-    }
+//     }
 
-    p1.innerHTML = `Your Ticket Price is : ${price}`;
-});
+//     p1.innerHTML = `Your Ticket Price is : ${price}`;
+// });
+
+
+// let date = new Date();
+// let hour = date.getHours();
+// let text = "";
+
+// if(hour>=5 && hour<12){
+//    text = "Good Morning";
+// }
+// else if(hour>=12 && hour<18){
+//     text = "Good Afternoon";
+// }
+// else if(hour>=18 && hour<22){
+//     text = "Good Evening";
+// }
+// else {
+//     text = "Good night";
+// }
+
+// console.log(text);
+
+
+// const number = 12;
+
+// let text = "";
+// if(number===0){
+//   text = "zero";
+// }
+// else if (number>=1 && number<=10){
+//     text = "Low Range";
+// }
+// else if(number>=11 && number<=20){
+//     text = "Mid Range";
+// }
+// else if(number>=21 && number<=30){
+//     text = "high Range";
+// }
+// else{
+//     if(number<0){
+//         text = "negative Number";
+//     }
+//     else{
+//         text = "out of range";
+//     }
+// }
+// console.log(text);
+
+
+// let cost = 600;
+// let price = 0;
+
+// if(cost>500){
+//    price = cost-(cost*20/100); 
+// }
+// else if(cost<=500 && cost>=200){
+//    price = cost-(cost*10/100); 
+// }
+// else{
+//     price = cost;
+// }
+// console.log(price);
+
+
+// let light = "Yellow";
+//     light = light.toLocaleLowerCase();
+
+// if(light=="green"){
+//     console.log("go");
+// }
+// else if(light=="yellow"){
+//     console.log("caution");
+// }
+// else if(light=="red"){
+//     console.log("Stop");
+// }
+// else{
+//     console.log("invalid light")
+// }
+
+
+// let year = 2013;
+
+// if(year%4===0 && year%100!==0 || year%400===0){
+//     console.log("leap Year");
+// }
+// else{
+//     console.log("Not Leap year");
+// }
+
+let marks = 75;
+let assigment = 7;
+
+// let text = "";
+// if(marks>=90 && marks<=100 && assigment>=10){
+//    text = "A";
+// }
+// else if(marks>=80 && marks<=89 && assigment>8 ){
+//     text = "B";
+//  }
+//  else if(marks>=70 && marks<=79 && assigment>6 ){
+//     text = "C";
+//  }
+//  else if(marks>=60 && marks<=69 && assigment>4 ){
+//     text = "D";
+//  }
+//  else if(marks<60 && marks>=0 && assigment<4 ){
+//     text = "F";
+//  }
+//  else{
+//     text = "invalid Number";
+//  }
+
+//  console.log(text);
+
+
+
+
+
+
+
+// Given a shopping amount, membership status (member or non-member), 
+// and if the purchase is on a special sale day, calculate the discount:
+
+// Non-member: No discount
+// Member: 10% discount
+// Special sale day: Additional 5% discount on top of the member discount
+
+
+// let member = true;
+// let day = true;
+// let cost = 100;
+
+// let price = 0;
+
+// if(member){
+//   if(day){
+//     price = cost- (cost*15/100) ;
+//   }
+//   else{
+//     price = cost- (cost*10/100);
+//   }
+// }
+// else{
+//     price = cost;
+// }
+
+// console.log(price);
+
+
+// let arr = [3, 1, 5, 8, 3, 9, 12, 5, 14];
+//    let number = [];
+//    let count = 0;
+// for(let x=0; x<arr.length; x++){
+//     if(arr[x]%2 === 0){
+//         number.push(arr[x]) ;
+//         count++;
+        
+     
+//     }   
+// };
+// console.log(Array.isArray(number));
+// console.log(number);
+// console.log(count);
+
+
+
+
 
 
  
