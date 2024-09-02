@@ -347,8 +347,8 @@ Ticket fare Calculator
 //     console.log("Not Leap year");
 // }
 
-let marks = 75;
-let assigment = 7;
+// let marks = 75;
+// let assigment = 7;
 
 // let text = "";
 // if(marks>=90 && marks<=100 && assigment>=10){
@@ -423,11 +423,294 @@ let assigment = 7;
 // console.log(count);
 
 
+// let arr = [1, 3, 5, 7, 2, 9 ];
+// let value = 4;
+// let bigValue = [];
+
+//   let count = 0;
+// for(let x=0; x<arr.length; x++){
+//    if(arr[x]>value){
+//     bigValue.push(arr[x]);
+//     count++;
+//    }
+// }
+// console.log(count);
+// console.log(bigValue);
+// p1.innerHTML= bigValue.join(" ");
+
+// let arr = [1, 2, 2, 3, 4, 4,2,5];
+
+//    number = [];
+// for(let x=0; x<arr.length; x++){
+//     if(!number.includes(arr[x])){
+//         number.push(arr[x]);
+//     }
+// }
+// console.log(number);
+// console.log(arr.indexOf(5));
+
+// let arr = [5, 3, 8, 1, 5];
+  
+// let count = arr[0];
+// for(let x=0; x<arr.length; x++){
+//    if(count>arr[x]){
+//     count = arr[x]
+//    }
+// }
+// console.log(count);
+
+// console.log(arr.length===0);
+
+// let arr = [2, 4, 6,4];
+//   let sum = 0;
+// for( let x=0; x<arr.length; x++){
+//    sum += arr[x];
+// }
+// console.log(sum/arr.length);
+
+// let num = 1;
+
+// while(num<10){
+//     console.log(num);
+//     if(num%2===0){
+//         console.log("even number", num);
+//     }
+//     num++;
+// };
+
+// let num=206;
+// let sum=0;
+// while(num<=311){
+//     num++;
+//     if(num%2===0){
+//         sum+=num;
+//         console.log("sum:",sum);
+//     }
+// }
+// console.log(sum);
+
+// const number = 5;
 
 
 
+// let num = 5;
 
+// let x =0;
+// let multi =0 ;
+// while(x<=9){
+//     x++;
+//    multi = num*x;
+//    data = `${num} x ${x} = ${multi}`;
+//    console.log(data);
+// };
  
+// let num=22;
+// while(num>15){
+//     num--;
+//     console.log(num);
+// }
+
+// let num = 9;
+// let multi;
+// for(let x=1; x<=10; x++){
+//   multi = num*x;
+//   data = num +" "+"x"+" "+ x + " "+"="+" "+multi;
+//   console.log(data);
+// };
+   
+// let data =0;
+// for(let x=1; x<=200; x++){
+    
+//     if(x>=100){
+//         data=x;
+//         break;     
+//     }
+    
+// }
+// console.log(data);
+
+
+// Write a while loop that adds numbers starting from 1, 
+// but stops (using break) as soon as the sum reaches or exceeds 100
+
+// let sum = 0;
+// let num ;
+// for(let x=1; x<=50; x++){
+//    sum += x;
+//    num = x;
+//    if(sum>=100){
+//     break;
+//    }
+// }
+// console.log(sum);
+// console.log(num);
+
+
+/* 
+Write a loop that goes from 1 to 100, but stops (using break) 
+when it encounters the first square number (like 4, 9, 16, etc.)
+*/
+
+// let square =0;
+// let num;
+// for(let x=1; x<=100; x++){
+//    square = Math.pow(x,2);
+//    if(square%1===0){
+//     if(x===1){
+//         continue;
+//     }
+//     num=x**2;
+//     break;
+//    }
+// }
+// console.log(num);
+
+// for(let x=1; x<=40; x++){
+//     if(x%2!==0){
+        
+//       continue;
+      
+//     }
+//     console.log(x);
+    
+// }
+
+// for(let x=55; x<=85; x++){
+//     if(x%5===0){
+//         continue;
+//     }
+//     console.log(x);
+// }
+
+
+// Think of an array with elements [1, 2, 3, 4, 5]. 
+// How would you loop through the array to reverse its order?
+
+// let arr = [1, 2, 3, 4, 5];
+// let arr2 = [];
+// for(let x=arr.length-1; x>=0; x--){
+//     arr2.push(arr[x]);
+    
+// }
+// console.log(arr2);
+
+
+
+// how many vowels (a, e, i, o, u) are in the string?
+
+// let name = "Javascript";
+//     name = name.toLowerCase();
+// let arr = [];
+// let count = 0;
+//  for(let x=0; x<name.length; x++){
+//     if(name[x]=="a" || name[x]=="e" || name[x]=="i" ||name[x]=="o" || name[x]=="u"){
+//        count++;
+//        arr.push(name[x]);
+//     }
+//  }
+//  console.log("Total Vowel Letter:" + " "+count);
+//  console.log("And Letter Is:"+ " "+ arr.join(" "));
+
+
+// let name = "Rakib";
+    
+// let reverseName = [];
+// for(let x=name.length; x>-1; x--){
+//     reverseName.push(name[x])
+// };
+// console.log(reverseName.join(""));
+
+// let name1 = "haYder ";
+// let name2 = "    hayder";
+
+// if(name1.toLowerCase().trim()===name2.toLocaleLowerCase().trim()){
+//     console.log("soman");
+// }
+// else{
+//     console.log("not match");
+// }
+
+// let emil = "rakib";
+
+// console.log(emil.split('').reverse().join(''));
+
+// let computer = {
+//     brand : "Asus",
+//     model : "UX-40",
+//     price : 26000,
+//     processor : "AMD",
+//     ssd : ["hp", "wd", "samsung"],
+//     casing : {
+//         color: "blue",
+//         isMetal : true,
+//         fan:{
+//             rgb: false,
+//             rpm : 1200
+//         }
+//     }
+// }
+
+// for( let x in computer){
+//     console.log(x, ":", computer[x]);
+// }
+
+
+// let props = Object.keys(computer);
+
+// for(let value of props){
+//     console.log(value,":", computer[value]);
+// };
+
+
+// const colors = {
+//     red: "#ff0000",
+//     green: "#00ff00",
+//     blue: "#0000ff",
+//     "golden rod": '#daa520'
+// };
+//   let x = "golden rod";
+// console.log(colors[x]);
+
+// For this object below add a property named passenger capacity with value 5
+
+// const car = {
+//     make: "Toyota",
+//     model: "Corolla",
+//     year: 2020
+// };
+//   car.passenger = 5;
+// console.log(car);
+
+// task-4------------------------------------
+let student = {
+    name: 'Ariana Grande',
+    age: 21,
+    city: 'Gaibandha',
+    isStudent: true
+};
+
+let propertes = Object.values(student);
+console.log(propertes);
+
+
+
+
+// task -5-------------------------------
+
+
+// let home = {
+//     name: 'John Doe',
+//     age: 25,
+//     city: 'Example City',
+//     isStudent: true
+// }
+
+
+// for(let props in home){
+//     console.log("Key:", props, "|", "Type:", typeof(home[props]));
+
+//     // console.log(`Key: ${props} | Type: ${typeof(home[props])}`);
+// }
 
 
 
