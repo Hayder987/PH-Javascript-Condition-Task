@@ -595,8 +595,7 @@ when it encounters the first square number (like 4, 9, 16, etc.)
 // console.log(arr2);
 
 
-
-// how many vowels (a, e, i, o, u) are in the string?
+// Check whether a string contains all the vowels a, e, i, o, u;
 
 // let name = "Javascript";
 //     name = name.toLowerCase();
@@ -608,8 +607,9 @@ when it encounters the first square number (like 4, 9, 16, etc.)
 //        arr.push(name[x]);
 //     }
 //  }
-//  console.log("Total Vowel Letter:" + " "+count);
+//  console.log("Total Vowel Letter Count:" + " "+count);
 //  console.log("And Letter Is:"+ " "+ arr.join(" "));
+
 
 
 // let name = "Rakib";
@@ -682,15 +682,15 @@ when it encounters the first square number (like 4, 9, 16, etc.)
 // console.log(car);
 
 // task-4------------------------------------
-let student = {
-    name: 'Ariana Grande',
-    age: 21,
-    city: 'Gaibandha',
-    isStudent: true
-};
+// let student = {
+//     name: 'Ariana Grande',
+//     age: 21,
+//     city: 'Gaibandha',
+//     isStudent: true
+// };
 
-let propertes = Object.values(student);
-console.log(propertes);
+// let propertes = Object.values(student);
+// console.log(propertes);
 
 
 
@@ -711,6 +711,123 @@ console.log(propertes);
 
 //     // console.log(`Key: ${props} | Type: ${typeof(home[props])}`);
 // }
+
+
+
+// let str = "This is a stringX with X and x.";
+// let result = "";
+
+// for(let x of str){
+//     if(x==="x"){
+//         result+="y"
+//     }
+//     else if(x==="X"){
+//         result += "Y"
+//     }
+//     else{
+//         result += x;
+//     }
+    
+// }
+// console.log(result);
+
+
+// // task-----make frist word UpperCase---------------------;
+// let myString = "hello world from javascript";
+// let arr = myString.split(" ");
+// let data = [];
+// for(let x=0; x<arr.length; x++){
+    
+//     let upperName = arr[x].charAt(0).toLocaleUpperCase() ;
+//      data.push(upperName+arr[x].slice(1));
+    
+    
+// }
+// let result = data.join(" ");
+
+// console.log(result);
+
+
+// Array Task-2-------------------------------------------------------------
+
+// Task 1---------------------
+// const colors = ['red', 'blue', 'green', 'yellow', 'orange'];
+// let revColors = [];
+// for(let color of colors){
+//    revColors.unshift(color); 
+// }
+
+// console.log(revColors);
+
+//task-2------------------------------
+// const numbers = [12, 98, 5, 41, 23, 78, 46];
+// let evenNumber = [];
+// for(let number of numbers){
+//     if(number%2===0){
+//       evenNumber.push(number);
+//     }
+// }
+
+// console.log(evenNumber);
+// console.log(evenNumber.sort());
+
+//task 3 ---------------------
+// method-1------
+// var numbers = ['Tom', 'Tim', 'Tin', 'Tik'];
+
+// let result = numbers.join("");
+
+// console.log(result);
+
+//method-2--------------
+// var numbers = ['Tom', 'Tim', 'Tin', 'Tik'];
+// let result = '';
+// for(let num of numbers){
+//     result += num;
+// }
+// console.log(result);
+
+//task 4 -----------------------------------
+// method 1 -------------------
+// const statement = 'I am a hard working person';
+
+// let result = statement.split(" ").reverse().join(" ");
+// console.log(result);
+
+// method 2 ----------------------
+// const statement = 'I am a hard working person';
+
+// let arr = statement.split(" ");
+// let revArr = [];
+
+// for (let x of arr){
+//     revArr.unshift(x);
+
+// }
+// let result = revArr.join(" ");
+// console.log(result);
+
+const address = {
+    street: "123 Main St",
+    city: "Pabna",
+    zip: "6600"
+};
+const contact = {
+    phone: "555-1234",
+    email: "example@example.com"
+};
+
+let profile = {
+    ...address,
+    ...contact
+}
+
+console.log(profile);
+
+
+
+
+
 
 
 
