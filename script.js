@@ -807,22 +807,152 @@ when it encounters the first square number (like 4, 9, 16, etc.)
 // let result = revArr.join(" ");
 // console.log(result);
 
-const address = {
-    street: "123 Main St",
-    city: "Pabna",
-    zip: "6600"
-};
-const contact = {
-    phone: "555-1234",
-    email: "example@example.com"
-};
 
-let profile = {
-    ...address,
-    ...contact
+// object concat / 2 ta object jora dewa;
+// const address = {
+//     street: "123 Main St",
+//     city: "Pabna",
+//     zip: "6600"
+// };
+// const contact = {
+//     phone: "555-1234",
+//     email: "example@example.com"
+// };
+
+// let profile = {
+//     ...address,
+//     ...contact
+// }
+
+// console.log(profile);
+
+
+// let name = "The cat sat on the cat mat.";
+
+
+// name = name.split(" ");
+// let arr = [];
+// for(let x of name){
+    
+//     if(x==="cat"){
+//         x="dog";
+//         arr.push(x);
+//     }
+//     else{
+//         arr.push(x);
+//     }
+    
+    
+// }
+// console.log(arr);
+
+// let number = "5";
+
+// for (let x=0; x<5; x++){
+//     if(number.length<5){
+//          number = "0" + number;
+//     }
+    
+// }
+// console.log(number);
+
+
+
+// name = name.split("");
+// let data;
+// for(let x of name){
+//     if(x==="s"){
+//         data = (name.indexOf(x));
+//         break
+//     }
+// }
+// console.log(data);
+
+// let square =0;
+// let num;
+// for(let x=1; x<=100; x++){
+//    square = Math.pow(x,2);
+//    if(square%1===0){
+//     if(x===1){
+//         continue;
+//     }
+//     num=x**2;
+//     break;
+//    }
+// }
+// console.log(num);
+
+//    let square = 0;
+//    let num = 0;
+//    let squareNum = 0;
+
+// for(let x=1; x<=100; x++){
+//     square = x**2;
+//     if(square===4 || square===9  || square===16){
+//         num = x;
+//         squareNum = square;
+//         break;
+//     }
+    
+// }
+// console.log("Found Square Number:" + " " + squareNum + " " + "and Number is:" + " "+ num );
+
+
+// let square = 0;
+
+// for(let x = 1; x <= 50; x++) {
+//     if(x % 1 === 0) {
+//         square = x ** 2;
+//         if(square === 4 || square === 9 || square === 16) { // এখানে শর্তগুলো যোগ করা হয়েছে
+//             console.log(`Square number ${square} found at x = ${x}`);
+//             break; // শর্ত মিললে লুপ ব্রেক হবে
+//         }
+//     }
+// }
+
+
+
+
+// const car = {
+//     make: 'Toyota',
+//     model: 'Corolla',
+//     year: 2020,
+//     description : function (){
+//         return `this car ${this.model} made by ${this.make}`;
+//     }
+    
+//   };
+  
+//   console.log(car.description());
+
+
+function Student (name, age, year){
+    this.name = name;
+    this.age  = age;
+    this.year = year;
+    this.display = function(){
+        console.log(name);
+        console.log(age);
+        console.log(year);
+    }
 }
 
-console.log(profile);
+let student1 = new Student("hayder", 25, 2021);
+let student2 = new Student("jony", 30, 2024);
+
+for(let item in student1){
+    let result = `${item} : ${student1[item]}`;
+    console.log(result);
+}
+
+
+
+
+
+
+
+
+
 
 
 
