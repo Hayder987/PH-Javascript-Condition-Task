@@ -926,24 +926,140 @@ when it encounters the first square number (like 4, 9, 16, etc.)
 //   console.log(car.description());
 
 
-function Student (name, age, year){
-    this.name = name;
-    this.age  = age;
-    this.year = year;
-    this.display = function(){
-        console.log(name);
-        console.log(age);
-        console.log(year);
-    }
-}
+// function Student (name, age, year){
+//     this.name = name;
+//     this.age  = age;
+//     this.year = year;
+//     this.display = function(){
+//         console.log(name);
+//         console.log(age);
+//         console.log(year);
+//     }
+// }
 
-let student1 = new Student("hayder", 25, 2021);
-let student2 = new Student("jony", 30, 2024);
+// let student1 = new Student("hayder", 25, 2021);
+// let student2 = new Student("jony", 30, 2024);
 
-for(let item in student1){
-    let result = `${item} : ${student1[item]}`;
-    console.log(result);
-}
+// for(let item in student1){
+//     let result = `${item} : ${student1[item]}`;
+//     console.log(result);
+// }
+
+
+
+ // function task----------------------------------------------------------------
+
+ //Take four parameters. Multiply the four numbers and then return the result
+
+//  function multi(a,b,c,d){
+//     let result = a*b*c*d;
+//     return result;
+//  }
+
+//  let data = multi(2,3,4,5);
+
+//  console.log(data);
+
+
+
+//Take a number if the number is odd multiply it by 2 and return the result.
+// If the number is even divide it by two and return the result.
+
+// function calculate (number){
+//     let result=0;
+//    if(number%2===0){
+//       result = number / 2;
+//    }
+//    else{
+//     result = number*2;
+//    }
+//    return result;
+// }
+// let data = calculate(40)
+
+// console.log(data);
+
+
+
+//Write a function called make_avg() which will take an array of integers and the size of 
+//that array and return the average of those values.
+
+// function make_avg(arr){
+//   let sum = 0;
+//   let result;
+  
+//   for(let item of arr){
+//     sum += item;
+//     result = sum/2;
+//   }
+//   return result
+  
+// }
+
+// let number = [2,45,12,3,6,7,8,6,9,14];
+// let data = make_avg(number);
+
+// console.log(data);
+
+
+// function make_avg(arr) {
+//   let result;
+//   let sum = 0;
+//   for (let item of arr){
+//     sum += item;
+//   }
+//   result = sum / arr.length;
+//   return result;
+// }
+
+// let number = [1,2,3,4,5,6];
+// console.log(make_avg(number));
+
+
+
+//Write a function called count_zero() which will take a binary string 
+// (Binary string is a string which is consist of only 0 and 1) as parameter and 
+// count how many 0’s are there in that string.
+
+
+// function count_zero(bin){
+//   bin = bin.split("");
+// //   let count = 0;
+//   let zeroNumber = [];
+//   for(let item of bin){
+//     item = parseFloat(item);
+//    if(item===0){
+//     // count ++
+//     zeroNumber.push(item);
+//    }
+
+//   }
+//  return zeroNumber;
+// }
+
+// let number = "1011011100101010";
+// let data = count_zero(number);
+// console.log(`Total zero : ${data.length} and Number is:${data}`);
+
+
+
+
+//Write a function called odd_even() which takes an integer value and tells whether this value is even or odd. 
+//If even return Even. If odd return Odd
+
+
+// function odd_even(num){
+//   let result = num%2===0 ? "Even-Number" : "Odd-Number";
+   
+//    return `${result} and Number is ${num}`;
+
+// }
+
+// let number = 40;
+// let output = odd_even(number);
+
+// console.log(output);
+
 
 
 
