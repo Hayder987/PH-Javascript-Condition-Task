@@ -733,6 +733,10 @@ when it encounters the first square number (like 4, 9, 16, etc.)
 
 
 // // task-----make frist word UpperCase---------------------;
+
+
+
+
 // let myString = "hello world from javascript";
 // let arr = myString.split(" ");
 // let data = [];
@@ -746,6 +750,10 @@ when it encounters the first square number (like 4, 9, 16, etc.)
 // let result = data.join(" ");
 
 // console.log(result);
+
+
+
+
 
 
 // Array Task-2-------------------------------------------------------------
@@ -1061,15 +1069,319 @@ when it encounters the first square number (like 4, 9, 16, etc.)
 // console.log(output);
 
 
+// let div2 = document.getElementById("div2");
+// let arr = ["dhaka", "pabna", "natore", "sylet"]
+// let p2 = document.createElement("select");
+
+// for(let item of arr){
+    
+//     let option = document.createElement("option");
+//     let text = document.createTextNode(item);
+//     p2.appendChild(option);
+//     let zela = option.appendChild(text);
+//     div2.appendChild(p2);
+//     if(zela==="dhaka"){
+//         zela.addEventListener("click",function (){
+//           let select = document.createElement("select");
+//           let suboption = document.createElement("option");
+//           let subtext = document.createTextNode("iswardi");
+//           select.appendChild(suboption);
+//           option.appendChild(subtext);
+//           zela.appendChild(select);
+
+//         });
+//     }
+   
+// }
 
 
 
 
 
 
+// let div2 = document.getElementById("div2");
+// let arr = ["dhaka", "pabna", "natore", "sylhet"];
+// let p2 = document.createElement("select");
+
+
+// for (let item of arr){
+//     let option = document.createElement("option");
+//     option.value = item;
+//     option.text = item;
+//     p2.appendChild(option);
+   
+// }
+//  div2.appendChild(p2);
+
+// p2.addEventListener("change", function(){
+//     let selectedValue = p2.value;
+
+// //     let existingSubSelect = document.getElementById("subSelect");
+// //   if (existingSubSelect) {
+// //     existingSubSelect.remove();
+// //   }
+
+//     if(selectedValue==="pabna"){
+//         let subSelect = document.createElement("select");
+//         subSelect.id = "subSelect";
+//         let subOption = document.createElement("option");
+//         subOption.text = "mirpur";
+//         subOption.value = "mirpur";
+//         subSelect.appendChild(subOption);
+//         div2.appendChild(subSelect);
+//     }
+// })
+
+
+// let div2 = document.getElementById("div2");
+// let zela = {
+//     dhaka : ["mirpur", "uttora"],
+//     pabna : ["bera", "chatmohor","iswardi"]
+    
+// };
+// let select = document.createElement("select");
+
+// for(let item in zela){
+//     let option = document.createElement("option");
+//     option.value = item;
+//     option.text = item;
+//     select.classList.add("text-4xl", "w-[300px]", "p-4", "bg-blue-300");
+//     select.appendChild(option);
+//     option.classList.add("text-sm")
+// }
+// div2.appendChild(select);
+// select.addEventListener("change", function(){
+//     let selectedValue = select.value;
+
+    
+
+//          if(selectedValue){
+//             let subSelect = document.createElement("select");
+//             subSelect.classList.add("text-3xl")
+//             subSelect.id = "subSelect";
+//             for (let item2 of zela[selectedValue]){
+//                 let subOption = document.createElement("option"); 
+//                     subOption.value = item2
+//                     subOption.text = item2
+//                     subSelect.appendChild(subOption);
+//             }
+//             let existingSubSelect = document.getElementById("subSelect");
+//             if (existingSubSelect) {
+//                 existingSubSelect.remove();
+//                }
+            
+//             div2.appendChild(subSelect);
+//         }
+
+ 
+// });
+
+//Write a function that checks if a string is a palindrome (reads the same backward).
+
+// let data = "madam";
+
+// function display(str){
+//     let result = true;    
+// revStr = str.split("").reverse().join("");
+
+// if(str===revStr){
+//    result = true
+// }
+// else{
+//     result = false
+// }
+// return result;
+// }
+// console.log(display(data));
+
+
+// console.log(Math.floor(Math.random()*(80-70)+1)+70);
+
+
+// let arr = ["i am fine", "i am ok", "fine", "i am good","very good"];
+
+// let index = Math.floor(Math.random()*arr.length);
+
+// let x= "how are you ";
+// if(x.trim()==="how are you"){
+//     console.log(arr[index]);
+// }
+// else{
+//     console.log("i cant under stand");
+// }
 
 
 
+// function tempConverter(clecius){
+//   let farenhite = (clecius * (9/5)) + 32;
+//   return farenhite;
+// };
+
+// console.log(tempConverter(30));
+
+// let number = [5,6,11,12,98, 5, 6,5];
+// let inputNumber = 5;
+
+// function repetNumber (arr, num){
+//     let count= 0 ;
+//   for(let item of arr){
+//     if(num===item){
+//       count++;
+//     }
+//     else{
+//         count;
+//     }
+//   }
+//   return count;
+// }
+// console.log(repetNumber(number, inputNumber));
+
+
+
+// let str = " I am learning Programming to become a programmer";
+
+// function display(name){
+//    name = name.split(" ");
+//    let BigName = "";
+//    let length = 0;
+//    for(let item of name){
+//       if(BigName.length<item.length){
+//         BigName = item;
+//         length = item.length;
+//       }
+//    }
+   
+//    return `" ${BigName} " and Word Count: ${length}`;
+// }
+// console.log(display(str));
+
+
+
+// let num1 = 10;
+// let num2 = 20;
+
+// function random(num1, num2){
+    
+//     let randomNumber = Math.round(Math.random()*(num2-num1)+num1);
+
+//     return randomNumber;
+
+// }
+// console.log(random(num1, num2));
+
+
+
+// let arr = [167, 190, 10, 165, 137];
+
+// function display(number){
+//     let lowNumber = number[0];
+//     for(let item of arr){
+//        if(item<lowNumber){
+//         lowNumber = item;
+//        }
+//     }
+//     return lowNumber;
+// };
+// console.log(display(arr));
+
+
+// let str = "I am learning Programming to become a programmer";
+
+// function display(name){
+//    name = name.trim().split(" ");
+//    let smallName = name[0];
+//    let length = 0;
+//    for(let item of name){
+//       if(smallName.length>item.length){
+//         smallName = item;
+//         length = item.length;
+//       }
+//    }
+   
+//    return `" ${smallName} " and Word Count: ${length}`;
+// }
+// console.log(display(str));
+
+
+
+
+// let name = ['rahim', 'robin', 'rafi', 'ron', 'rashed'];
+
+// function display(arr){
+//   let smallName = arr[0];
+  
+// for(let item of arr){
+//    if(smallName.length>=item.length){
+//      smallName = item;
+//    }
+// }
+// return smallName;
+// }
+// console.log(display(name));
+
+
+   
+
+// function totalPrice(lap, tab, mob){
+//     let laptop = 35000 ;
+//     let tablet = 15000 ;
+//     let mobile = 20000 ;
+
+//     let price = (lap*laptop) + (tab*tablet) + (mob*mobile);
+
+//     return price;
+// }
+// let laptop = 1;
+// let tablet = 3;
+// let mobile = 2;
+
+// console.log(totalPrice(laptop, tablet, mobile));
+
+
+
+// const phones = [
+//     { model: "PhoneA", brand: "Iphone", price: 95000 },
+//     { model: "PhoneB", brand: "Samsung", price: 40000 },
+//     { model: "PhoneC", brand: "Oppo", price: 26000 },
+//     { model: "PhoneD", brand: "Nokia", price: 35000 },
+//     { model: "PhoneE", brand: "Iphone", price: 105000 },
+//     { model: "PhoneF", brand: "HTC", price: 48000 },
+// ];
+
+// function display (arr){
+//     let sum = 0;
+// for(let item of arr){
+//   sum += item["price"];
+// }
+//   average = sum / arr.length;
+//   average = Math.round(average);
+// return average;
+// }
+
+// console.log(display(phones));
+
+
+const employees = [
+    { name: "shahin", experience: 5, starting: 20000, increment: 5000 },
+    { name: "shihab", experience: 3, starting: 15000, increment: 7000 },
+    { name: "shikot", experience: 9, starting: 30000, increment: 1000 },
+    { name: "shohel", experience: 0, starting: 29000, increment: 4000 },
+];
+
+
+function totalSalary (arr){
+    let totalSalary = 0;
+    let employe = [];
+    for (let item of arr){
+        let salary = item["starting"] + (item["experience"]*item["increment"]);
+        employe.push(`${item["name"]} : ${salary}`);
+        totalSalary += salary;   
+    }
+    console.log(employe);
+    return ` ${employe.join("|")} and Total : ${totalSalary}`;
+};
+
+console.log(totalSalary(employees));
 
 
 
