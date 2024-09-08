@@ -1,6 +1,4 @@
 console.clear();
-let p1 = document.querySelector("#p1");
-
 
 let btn1 = document.querySelector("#btn1");
 btn1.addEventListener("click", function (){
@@ -1361,31 +1359,355 @@ when it encounters the first square number (like 4, 9, 16, etc.)
 // console.log(display(phones));
 
 
-const employees = [
-    { name: "shahin", experience: 5, starting: 20000, increment: 5000 },
-    { name: "shihab", experience: 3, starting: 15000, increment: 7000 },
-    { name: "shikot", experience: 9, starting: 30000, increment: 1000 },
-    { name: "shohel", experience: 0, starting: 29000, increment: 4000 },
-];
+// const employees = [
+//     { name: "shahin", experience: 5, starting: 20000, increment: 5000 },
+//     { name: "shihab", experience: 3, starting: 15000, increment: 7000 },
+//     { name: "shikot", experience: 9, starting: 30000, increment: 1000 },
+//     { name: "shohel", experience: 0, starting: 29000, increment: 4000 },
+// ];
 
 
-function totalSalary (arr){
-    let totalSalary = 0;
-    let employe = [];
-    for (let item of arr){
-        let salary = item["starting"] + (item["experience"]*item["increment"]);
-        employe.push(`${item["name"]} : ${salary}`);
-        totalSalary += salary;   
-    }
-    console.log(employe);
-    return ` ${employe.join("|")} and Total : ${totalSalary}`;
-};
+// function totalSalary (arr){
+//     let totalSalary = 0;
+//     let employe = [];
+//     for (let item of arr){
+//         let salary = item["starting"] + (item["experience"]*item["increment"]);
+//         employe.push(`${item["name"]} : ${salary}`);
+//         totalSalary += salary;   
+//     }
+//     console.log(employe);
+//     return ` ${employe.join("|")} and Total : ${totalSalary}`;
+// };
 
-console.log(totalSalary(employees));
+// console.log(totalSalary(employees));
+
+// let arr = [3, 5, 8, 10, 13, 17, 19, 21];
+
+// function isPrime (num){
+
+//     if(num<2){
+//         return false;
+//     }
+//     for(let x=2; x<=Math.sqrt(num); x++){
+//         if(num%2===0){
+//             return false
+//         }
+//     }
+//     return true;
+// }
+// function countPrimes(arr){
+//    let primeCount = 0;
+//    for(let item of arr ){
+//     if(isPrime(item)){
+//         primeCount++;
+//     }
+//    }
+//    return primeCount;
+// }
+
+// console.log(countPrimes(arr));
 
 
 
 
+// function add(num1, num2){
+//     return num1+num2
+// }
+
+// function subtract(num1, num2){
+//     return num1-num2
+// }
+
+// function multi(num1, num2){
+//     return num1*num2
+// }
+
+// function calculate(a, b, value){
+// let result =0;
+//     if(typeof a !== "number" || typeof a !== "number"){
+//         return console.log("Not a number plz add number") ;
+//     }
+//     else{
+//         if(value==="add"){
+//             result = (add(a, b));
+//           }
+       
+//           else if(value==="subtract"){
+//             result = (subtract(a, b));
+//           }
+       
+//           else if(value==="multi"){
+//             result = (multi(a, b));
+//           }
+//           else{
+//             result = "plz Enter 'add' 'subtract' 'multi'";
+//           }
+//     }
+  
+//    return result;
+// };
+
+// console.log(calculate(6, 5, "multi"));
+
+
+// let arr = [1, NaN, {},7, [],5,"sting",6 ,undefined];
+
+// function numberArray(arr){
+//     if(!Array.isArray(arr)){
+//         return "It is not Array";
+//     }
+//     let newArr = [];
+//     for(let item of arr){
+//         if(typeof item === "number" && !isNaN(item)){
+//             newArr.push(item);
+//         }
+//     }
+//     return newArr;
+// }
+
+// let data = numberArray(arr);
+
+// console.log(data);
+
+
+// 0 -100 = 100;
+//    101-150 = 80
+//    avobe 150 = 70
+
+// function display(quantites){
+//    let item100price = 100;
+//    let item150price = 50;
+//    let avobe150price = 10;
+
+//    if(typeof quantites !== "number"){
+//     return "Plz Enter Number value";
+//    }
+
+//     let totalPrice = 0;
+
+//    if(quantites<=100 && quantites>=0){
+//       totalPrice = quantites*item100price;
+//       return totalPrice;
+//    }
+//    else if(quantites>=101 && quantites<=150){
+//       totalPrice = quantites*item150price;
+//       return totalPrice;
+//    }
+//    else if(quantites>150){
+//     totalPrice = quantites*avobe150price;
+//     return totalPrice;
+//    }
+//    else{
+//     return "Invalid Quntites";
+//    }
+// }
+
+// console.log(display(152));
+
+
+// 0 -100 = 100;
+//    101-150 = 80
+//    avobe 150 = 70
+
+
+// function display(qty){
+//    let item100price = 10;
+//    let item150price = 5;
+//    let above150price = 3;
+
+//    let totalPrice = 0;
+
+//    if(qty<=100){
+//     totalPrice = item100price*qty;
+//     return totalPrice;
+//    }
+//    else if(qty>100 && qty<=150){
+//     let qty100price = item100price*100;
+//     let restPrice = (qty-100)*item150price;
+//     return totalPrice = qty100price + restPrice;
+//    }
+//    else if(qty>150){
+//     let qty100price = item100price*100;
+//     let next50price = 50*item150price;
+//     let restPrice = (qty-150)*above150price;
+
+//     return totalPrice = qty100price + next50price + restPrice;
+//    }
+//    else{
+//     return "Invalid Number";
+//    }
+
+// }
+// console.log(display(200));
+
+// let phones = [
+//     {name: "samsung", price:25000, color:"blue"},
+//     {name: "Lg", price:11000, color:"blue"},
+//     {name: "HTC", price:55000, color:"blue"},
+//     {name: "Oppo", price:45000, color:"blue"}
+// ];
+
+// function lowestPhone(arr){
+//     let price = arr[0].price;
+//     let name = "";
+//     for(let item of arr){
+//         if(price>item.price){
+//             name = item.name;
+//             price = item.price;
+//         }
+//     };
+//    return `${name} : ${price}`;
+// }
+
+// console.log(lowestPhone(phones));
+
+
+// const employees = [
+//     { name: "shahin", experience: 5, starting: 20000, increment: 5000 },
+//     { name: "shihab", experience: 3, starting: 15000, increment: 7000 },
+//     { name: "shikot", experience: 9, starting: 30000, increment: 1000 },
+//     { name: "shohel", experience: 0, starting: 29000, increment: 4000 }
+// ];
+
+
+// function salary(arr){
+//      let eachSalary = 0;
+//      let totalSalary = 0;
+//      let newArr = [];
+//     for(let item of arr){
+//        eachSalary = (item.experience*item.increment) + item.starting;
+//        newArr.push(`${item.name} : ${eachSalary}`);
+       
+//       totalSalary += eachSalary;
+//     } 
+//    return `${newArr.join(" | ")} and Total salary is : ${totalSalary}`;
+// };
+
+// console.log(salary(employees));
+
+
+// B9-A-4 Problem Task----------------------------------------------------------->
+
+//problem 1------------------------------------------------>
+
+// function calculateMoney(ticketSale) {
+//     if(ticketSale<0){
+//         return "Invalid Number";
+//     }
+//     else{
+//         let ticketPrice = 120;
+//         let stafCost = 50;
+//         let result = (ticketPrice*ticketSale) - 500 - stafCost*8;
+//         return result;
+//     }
+// };
+// let data = calculateMoney(45);
+
+// console.log(data)
+
+
+//problem 2------------------------------------------------>
+
+// function checkName(name) {
+//     if(typeof name !== "string"){
+//         return "Input Correct Name";
+//     }
+
+//     name = name.toLowerCase();
+//     let arr = ["a", "y", "i" , "e" , "o" , "u", "w"];
+//     let lastChart = name.slice(-1);
+//     // let result = false;
+
+
+
+//    return result = arr.includes(lastChart) ? "Good Name" : "Bad Name";
+//     // for(let item of arr){
+
+//     //     if(lastChart === item){
+//     //         result = !false;
+//     //     }
+        
+//     // }
+    
+//     // return result ? "Good Name" : "bad Name"; 
+// }
+
+// console.log(checkName("salman"));
+// console.log(checkName("rafee"));
+// console.log(checkName("Jhankar"));
+// console.log(checkName(199));
+// console.log(checkName(["Rashed"]));
+
+
+
+//problem 3------------------------------------------------>
+  
+// function deleteInvalids(arr){
+
+// if(!Array.isArray(arr)){
+//     return "invalid Array";
+// }
+// let newArr = [];
+// for(let item of arr){
+//    if(typeof item === "number" && !isNaN(item)){
+//     newArr.push(item);
+//    }
+// }
+// return newArr;
+
+// }
+
+// console.log(deleteInvalids([1, null, undefined, 18, -19, NaN, "12", [1, 2], { ob: "lala" }]));
+// console.log(deleteInvalids(["1" , {num:2} , NaN ]));
+// console.log(deleteInvalids([ 1 , 2 , -3 ]));
+// console.log(deleteInvalids({num: [ 1 , 2 , 3 ]}));
+
+//problem 4------------------------------------------------>
+
+// function password(obj){
+   
+//     if( obj.name===undefined ||  obj.birthYear===undefined ||  obj.siteName=== undefined || obj.birthYear.toString().length !==4){
+//         return "invalid";
+//     }
+//     let FristCapital = obj.siteName.charAt(0).toUpperCase();
+//     let passWord ;
+//     passWord =  FristCapital + obj.siteName.slice(1) + "#" + obj.name + "@" + obj.birthYear;
+
+//    return passWord;
+// };
+// console.log(password({ name: "kolimuddin" , birthYear: 1999 , siteName: "google" }));
+// console.log(password({ name: "rahat", birthYear: 2002, siteName: "Facebook" }));
+// console.log(password({ name: "toky", birthYear: 200, siteName: "Facebook" }));
+// console.log(password({ name: "maisha", birthYear: 2002 }));
+
+//problem 5------------------------------------------------>
+// function monthlySavings(arr, cost){
+//     if(!Array.isArray(arr) || typeof cost !=="number"){
+//       return "Invalid Input";
+//     }
+//      let savings = 0;
+//      let totalIncome = 0;
+
+//     for(let item of arr){
+//         let data = item>=3000 ? true : false
+//        if(data){
+//         totalIncome += item - (item*20/100); // 20% tax deduct;
+//        }
+//        else {
+//         totalIncome += item;
+//        }
+       
+//     }
+//     savings = totalIncome - cost;
+
+//     return savings>=0 ? savings : "earn more";
+
+// }
+
+// console.log(monthlySavings([ 1000 , 2000 , 3000 ] , 5400));
+// console.log(monthlySavings([ 1000 , 2000 , 2500 ] , 5000));
+// console.log(monthlySavings([ 900 , 2700 , 3400] , 10000));
+// console.log(monthlySavings(100, [ 900 , 2700 , 3400]));
 
 
 
