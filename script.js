@@ -1713,6 +1713,71 @@ when it encounters the first square number (like 4, 9, 16, etc.)
 
 
 
+function calculateIncome(arr, tgtIncome){
+
+    if(!Array.isArray(arr) || typeof tgtIncome !=="number"){
+        return "Invalid Input";
+    }
+
+    let totalIncome = 0;
+    let paidIncome = 0;
+    let result ;
+    for(let item of arr){
+        if(typeof item !=="object" || typeof item.amount !== "number" || typeof item.paid !=="boolean"){
+           return "invalid Input";
+        }
+
+        if(item.paid === true){ 
+            paidIncome += item.amount;
+            totalIncome += item.amount;
+        }
+        else{
+            totalIncome += item.amount;
+        }
+    }
+
+    if(tgtIncome>paidIncome){
+        return `Targe: ${tgtIncome} And achieved : ${paidIncome} Need More Client`;
+    }
+    else{
+        return result ={
+            TotalIncome : totalIncome,
+            PaidIncome : paidIncome,
+            TargetIncome : tgtIncome
+        }
+    }
+    
+
+};
+
+console.log(calculateIncome([{ amount: 5000, paid: true },
+                             { amount: 3000, paid: false },
+                             { amount: 2000, paid: true }],10000));
+
+console.log(calculateIncome( [{ amount: 7000, paid: true },
+                              { amount: 5000, paid: true },
+                              { amount: 3000, paid: false }],11000));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
