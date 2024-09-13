@@ -1662,12 +1662,16 @@ when it encounters the first square number (like 4, 9, 16, etc.)
 // console.log(deleteInvalids([ 1 , 2 , -3 ]));
 // console.log(deleteInvalids({num: [ 1 , 2 , 3 ]}));
 
-//problem 4------------------------------------------------>
+
+
+// problem 4------------------------------------------------>
 
 // function password(obj){
    
 //     if( obj.name===undefined ||  obj.birthYear===undefined ||  obj.siteName=== undefined || obj.birthYear.toString().length !==4){
+
 //         return "invalid";
+        
 //     }
 //     let FristCapital = obj.siteName.charAt(0).toUpperCase();
 //     let passWord ;
@@ -1679,6 +1683,8 @@ when it encounters the first square number (like 4, 9, 16, etc.)
 // console.log(password({ name: "rahat", birthYear: 2002, siteName: "Facebook" }));
 // console.log(password({ name: "toky", birthYear: 200, siteName: "Facebook" }));
 // console.log(password({ name: "maisha", birthYear: 2002 }));
+
+
 
 //problem 5------------------------------------------------>
 // function monthlySavings(arr, cost){
@@ -1713,69 +1719,287 @@ when it encounters the first square number (like 4, 9, 16, etc.)
 
 
 
-function calculateIncome(arr, tgtIncome){
+// function calculateIncome(arr, tgtIncome){
 
-    if(!Array.isArray(arr) || typeof tgtIncome !=="number"){
-        return "Invalid Input";
-    }
+//     if(!Array.isArray(arr) || typeof tgtIncome !=="number"){
+//         return "Invalid Input";
+//     }
 
-    let totalIncome = 0;
-    let paidIncome = 0;
-    let result ;
-    for(let item of arr){
-        if(typeof item !=="object" || typeof item.amount !== "number" || typeof item.paid !=="boolean"){
-           return "invalid Input";
-        }
+//     let totalIncome = 0;
+//     let paidIncome = 0;
+//     let result ;
+//     for(let item of arr){
+//         if(typeof item !=="object" || typeof item.amount !== "number" || typeof item.paid !=="boolean"){
+//            return "invalid Input";
+//         }
 
-        if(item.paid === true){ 
-            paidIncome += item.amount;
-            totalIncome += item.amount;
-        }
-        else{
-            totalIncome += item.amount;
-        }
-    }
+//         if(item.paid === true){ 
+//             paidIncome += item.amount;
+//             totalIncome += item.amount;
+//         }
+//         else{
+//             totalIncome += item.amount;
+//         }
+//     }
 
-    if(tgtIncome>paidIncome){
-        return `Targe: ${tgtIncome} And achieved : ${paidIncome} Need More Client`;
-    }
-    else{
-        return result ={
-            TotalIncome : totalIncome,
-            PaidIncome : paidIncome,
-            TargetIncome : tgtIncome
-        }
-    }
+//     if(tgtIncome>paidIncome){
+//         return `Targe: ${tgtIncome} And achieved : ${paidIncome} Need More Client`;
+//     }
+//     else{
+//         return result ={
+//             TotalIncome : totalIncome,
+//             PaidIncome : paidIncome,
+//             TargetIncome : tgtIncome
+//         }
+//     }
+// };
+
+// console.log(calculateIncome([{ amount: 5000, paid: true },
+//                              { amount: 3000, paid: false },
+//                              { amount: 2000, paid: true }],10000));
+
+// console.log(calculateIncome( [{ amount: 7000, paid: true },
+//                               { amount: 5000, paid: true },
+//                               { amount: 3000, paid: false }],11000));
+
+
+
+// function calculateWorkHours(arr){
+//      let workingHour = 0;
+//     for(let item of arr){
+//        if(typeof item !=="object" || typeof item.hours !== "number"){
+//         return "Invalid Input";
+//        }
+//        workingHour += item.hours;
+//     }
+//     if(workingHour<=200){
+//         return `Time Available, And Working Time is: ${workingHour} hrs Remaining Time: ${200-workingHour} hrs`;
+//     }
+//     return `too Much Work, And Working Time is: ${workingHour} hrs`
+// };
+
+// console.log(calculateWorkHours([
+//     { projectName: "Logo Design", hours: 30 },
+//     { projectName: "Banner Design", hours: 70 },
+//     { projectName: "Website Mockup", hours: 90 }
+//   ]));
+
+
+// task == Password Checker-------------------------------------------->
+// function checkPassword(pass){
     
+//     //    pass = pass.split("");
+//     if(pass.length < 8 ){
+//         return "Weak Password";
+//     }
+   
+//     let isCapital = /[A-Z]/.test(pass);
+//     let isSmall =  /[a-z]/.test(pass);
+//     let isNumber = /[0-9]/.test(pass);
 
-};
+//     if(isCapital && isSmall && isNumber){
+//      return "Strong PassWord"
+//     }
+//     else{
+//         return "Weak Password";
+//     }
 
-console.log(calculateIncome([{ amount: 5000, paid: true },
-                             { amount: 3000, paid: false },
-                             { amount: 2000, paid: true }],10000));
-
-console.log(calculateIncome( [{ amount: 7000, paid: true },
-                              { amount: 5000, paid: true },
-                              { amount: 3000, paid: false }],11000));
-
-
-
-
-
-
-
-
-
-
+// }
+// console.log(checkPassword("Pass1234"));
 
 
+// function leapYear(year){
+  
+//     if(year%400 ===0 || year%4===0 && year%100 !==0){
+//         return "leap Year"
+//       }
+//       else{
+//         return "not Leap Year";
+//       }
+//     }
+// console.log(leapYear(1900));
+
+
+
+//  JohnDoe-1990
+
+// function goodName(user){
+//     if(typeof user !== "object" || user.firstName === undefined || user.lastName=== undefined || user.birthYear === undefined ||
+//          user.birthYear.length>4 || typeof user.firstName !=="string" || typeof user.lastName !=="string" || typeof user.birthYear !=="number" ){
+
+//         return "invalid Input";
+//     }
+
+//      let firstCapital = user.firstName.charAt(0).toUpperCase();
+//      let lastCapital = user.lastName.charAt(0).toUpperCase();
+
+//      let name = firstCapital + user.firstName.slice(1) + lastCapital + user.lastName.slice(1) +"-" + user.birthYear;
+
+//      return name
+
+// }
+// console.log(goodName({ firstName: "john", lastName: "doe",  birthYear: 1990 }));
 
 
 
 
+// function uniqueId(obj){
+   
+//     let capital = obj.username.charAt(0).toUpperCase();
+//     let dateArr = obj.signupDate.split("-");
+
+//     let userId = capital + obj.username.slice(1) +"-"+ dateArr[1] +"-"+ dateArr[0];
+
+//     return userId;
+
+// }
+// console.log(uniqueId({ username: "alice", email: "alice@example.com", signupDate: "2024-09-01" }));
+
+
+// function discount(price, discount){
+
+// if(price<0 || discount<0 || discount>100){
+//     return "Invalid Input";
+// }
+
+// let discountPrice = price - (price*discount/100);
+
+// return discountPrice;
+
+// }
+
+// console.log(discount(2000, 10));
+
+
+// function interestCalculator(principle, rate, time){
+//     if(principle<0 || rate<0 || time<0){
+//         return "inavalid Input"
+//     }
+
+// let interest = principle*rate/100 * time;
+// return `Your Interest is: ${interest} and Total : ${principle+interest}`
+
+// }
+// let principle = 5000;
+// let rate = 5;
+// let time = 2;
+// console.log(interestCalculator(principle, rate, time));
+
+
+// function domainPath(url){
+
+//      url = url.split("/");
+
+//     let result = {Protocol: url[0].slice(0 , -1), Domain: url[2], Path: url[3]}
+//     return result;
+
+// }
+
+// console.log(domainPath("https://www.example.com/home"));
+
+// function numberCheck(number){
+//    number = number.toString();
+// if(number.length<10 || number.length>10){
+//     return "Invalid Number"
+// }
+
+// let result = `+1 (${number.slice(0, 3)}) ${number.slice(3,6)}-${number.slice(6, 10)}`
+
+// return result;
+// };
+// console.log(numberCheck(1234567890));
 
 
 
+// let date = new Date;
+
+// let month = date.getMonth()-6;
+// let text = "";
+
+// switch(month){
+//     case 1 : text= "January";
+//     break;
+//     case 2 : text = "february";
+//     break;
+//     case 3 : text = "March";
+//     break;
+//     case 4 : text = "April";
+//     break;
+//     case 5 : text = "may";
+//     break;
+//     case 6 : rext = "june";
+// }
+
+// console.log(text);
+
+
+// function date(date){
+
+// date = date.split("-");
+// let month = parseFloat(date[1]);
+// let text = "";
+// if(month>12 || month<=0){
+//     return "invalid Date"
+// }
+
+// switch(month){
+//     case 1 : text = "January";
+//     break;
+//     case 2 : text = "Febriary";
+//     break;
+//     case 3 : text = "March";
+//     break;
+//     case 4 : text = "April";
+//     break;
+//     case 5 : text = "may";
+//     break;
+//     case 6 : rext = "june";
+//     break;
+//     case 7 : text = "'July";
+//     break;
+//     case 8 : text = "august";
+//     break;
+//     case 9 : text = "Septembar";
+//     break;
+//     case 10 : text = "October";
+//     break;
+//     case 11 : text = "novembar";
+//     break;
+//     case 12 : text = "december";
+// }
+
+// let result = `${text} ${date[2]}, ${date[0]}`;
+
+// return result;
+
+// }
+// console.log(date("2024-12-12"));
+
+
+
+// function calculateEligibility(obj){
+// if(typeof obj !== "object" || obj.name===undefined || obj.roundOneScore ===undefined || obj.roundTwoScore===undefined || obj.sportsGrade== undefined || obj.isParentCoach=== undefined){
+//     return "Invalid Input"
+// }
+
+// let totalScore = 0;
+// if(typeof obj.name==="string" && obj.roundOneScore<=30 && obj.roundTwoScore<=40 && obj.sportsGrade<=20 && typeof obj.isParentCoach === "boolean"){
+//      totalScore = obj.roundOneScore + obj.roundTwoScore + obj.sportsGrade;
+     
+// }
+
+
+// if(obj.isParentCoach===true){
+//     totalScore = totalScore + 10;
+// }
+
+
+// return totalScore>=70 ? true : false;
+
+
+// }
+// console.log(calculateEligibility({name: "Sara", roundOneScore: 25, roundTwoScore: 35, sportsGrade: 15, isParentCoach: false}));
+// console.log(calculateEligibility({name: "jony", roundOneScore: 20, roundTwoScore: 30, sportsGrade: 15, isParentCoach: true}));
 
 
 
